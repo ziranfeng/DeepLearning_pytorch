@@ -46,7 +46,7 @@ class Net(torch.nn.Module):                                 # Inherit torch's Mo
 
 # Make a sample net
 net = Net(n_feature=1, n_hidden=10, n_output=1)
-print(net)  # Print the structure of above net
+print(net)  # Print net architecture
 """
 Net (
   (hidden): Linear (1 -> 10)
@@ -61,9 +61,10 @@ plt.ion()
 plt.show()
 
 # Define an optimiser
-optimizer = torch.optim.SGD(net.parameters(), lr=0.5)
+optimizer = torch.optim.SGD(net.parameters(), lr=0.2)
 # Define the loss function that will be used in the training
-loss_func = torch.nn.MSELoss()
+loss_func = torch.nn.MSELoss()  # this is for regression mean squared loss
+
 
 # Create a 100 steps training iteration
 for t in range(100):
@@ -72,9 +73,9 @@ for t in range(100):
     # Calculate the cost
     loss = loss_func(prediction, y)
 
-    optimizer.zero_grad()   # Empty the remaining gradients from the last step
-    loss.backward()         # backwards the loss and update parameters
-    optimizer.step()        # update the parameters to net's
+    optimizer.zero_grad()   # clear gradients for next train
+    loss.backward()         # back propagation, compute gradients
+    optimizer.step()        # apply gradients
 
     # Plot every 5 steps
     if t % 5 == 0:
@@ -84,7 +85,6 @@ for t in range(100):
         plt.plot(x.data.numpy(), prediction.data.numpy(), 'r-', lw=5)
         plt.text(0.5, 0, 'Loss=%.4f' % loss.data.numpy(), fontdict={'size': 20, 'color': 'red'})
         plt.pause(0.1)
-    
 
-
-
+    plt.ioff()
+    plt.show()
