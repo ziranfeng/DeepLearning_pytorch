@@ -64,11 +64,11 @@ if __name__ == '__main__':
         print('Epoch: ', epoch)
         for step, (b_x, b_y) in enumerate(loader):          # for each training step
             for net, opt, l_his in zip(nets, optimizers, losses_his):
-                output = net(b_x)              # get output for every net
-                loss = loss_func(output, b_y)  # compute loss for every net
-                opt.zero_grad()                # clear gradients for next train
-                loss.backward()                # backpropagation, compute gradients
-                opt.step()                     # apply gradients
+                output = net(b_x)                   # get output for every net
+                loss = loss_func(output, b_y)       # compute loss for every net
+                opt.zero_grad()                     # clear gradients for next train
+                loss.backward()                     # backpropagation, compute gradients
+                opt.step()                          # apply gradients
                 l_his.append(loss.data.numpy())     # loss recoder
 
     labels = ['SGD', 'Momentum', 'RMSprop', 'Adam']
