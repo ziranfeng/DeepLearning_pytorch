@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="690aa016-3478-4286-a65c-40691caf48fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codes/11.RNN_regressor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes/12.autoencoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes/13.DQN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codes/14.GAN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="690aa016-3478-4286-a65c-40691caf48fe" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +12,7 @@
     <session id="977401647">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -121,8 +116,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codes/14.GAN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="221">
+              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+              <folding>
+                <element signature="e#189#201#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,7 +216,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1230" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18434343" />
@@ -378,8 +375,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes/14.GAN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="221">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="e#189#201#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
